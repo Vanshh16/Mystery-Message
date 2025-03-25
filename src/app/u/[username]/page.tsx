@@ -149,7 +149,7 @@ function MessagePage({ className, ...props }: CardProps) {
             <CardContent className="grid mb-1 gap-4">
               {
                 suggestiveMessages.map((message, index) => (
-                  <div className=" flex items-center space-x-4 rounded-md border p-4">
+                  <div key={index+1} className=" flex items-center space-x-4 rounded-md border p-4">
                     <div className="flex-1 text-center space-y-2">
                       {
                         isLoading ? (<Skeleton className="h-4 w-[250px]" />) :

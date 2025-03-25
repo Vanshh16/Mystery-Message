@@ -20,7 +20,7 @@ import { signInSchema } from "@/schema/signInSchema"
 import { signIn } from "next-auth/react"
 
 
-function page() {
+function Page() {
 
   const [isSubmitting, setIsSubmitting] = useState(false)
 
@@ -119,4 +119,4 @@ function page() {
   )
 }
 
-export default page
+export default Page
