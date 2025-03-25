@@ -1,14 +1,5 @@
-import OpenAI from 'openai';
-import { StreamingTextResponse, StreamData, OpenAIStream } from 'ai';
+
 import { GoogleGenerativeAI } from "@google/generative-ai";
-
-// const openai = new OpenAI({
-//     apiKey: process.env.OPENAI_API_KEY
-// })
-
-
-
-
 export const runtime = "edge"
 export async function POST(req: Request) {
     try {
