@@ -25,7 +25,7 @@ import suggestions from "@/suggestions.json"
 
 type CardProps = React.ComponentProps<typeof Card>
 
-function MessagePage({ className, ...props }: CardProps) {
+export default function MessagePage(props: any) {
 
   const params = useParams<{ username: string }>();
   const [content, setContent] = useState("");
@@ -172,7 +172,7 @@ function MessagePage({ className, ...props }: CardProps) {
   )
 }
 
-export default MessagePage
+
 
 
 // {
