@@ -61,7 +61,7 @@ function Page() {
       }
     }
     if (result?.url) {
-      router.replace("/dashboard")
+      router.push("/dashboard")
     }
   }
   return (
